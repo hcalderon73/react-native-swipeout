@@ -137,7 +137,7 @@ const Swipeout = createReactClass({
     };
   },
 
-  componentWillMount: function () {
+  componentDidMount: function () {
     this._panResponder = PanResponder.create({
       onStartShouldSetPanResponder: (event, gestureState) => true,
       onStartShouldSetPanResponderCapture: (event, gestureState) =>
